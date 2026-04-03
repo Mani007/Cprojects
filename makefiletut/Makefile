@@ -1,3 +1,2 @@
-hello:
-	echo "Hello, World"
-	echo "This line will print if the file hello does not exist."
+file1:
+	gcc file1.c -o file1
