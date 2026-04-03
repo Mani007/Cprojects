@@ -1,2 +1,3 @@
 hello:
-	echo"Hello Make"
+	echo "Hello, World"
+	echo "This line will print if the file hello does not exist."
