@@ -15,4 +15,22 @@ targets: prerequisites
 hello:
 	echo "Hello, World"
 	echo "This line will print if the file hello does not exist."
+```  
+### For current file
+Makefile content
+```
+file1:
+	gcc file1.c -o file1
+``` 
+To execute this makefile, use the following command 
+```
+make file1
+```
+The output is file1.exe in the same folder and to run it, use the following command
+```
+./file1.exe
+```  
+The output will be the following as implemented in the C file 
+```
+Makefile tutorial
 ```
