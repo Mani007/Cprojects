@@ -33,4 +33,8 @@ The output is file1.exe in the same folder and to run it, use the following comm
 The output will be the following as implemented in the C file 
 ```
 Makefile tutorial
+```  
+To clean the generated .exe file/files, after making changes in the make file, use the command
 ```
+make clean
+``` 
