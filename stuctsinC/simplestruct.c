@@ -1,4 +1,5 @@
-#pragma once
+//#pragma once
+#include <stdio.h>  // include this
 #include "simplestruct.h"
 ThreeD new3d;  // Make it global
 void add3Dpoint(int x,int y, int z){
