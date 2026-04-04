@@ -13,7 +13,7 @@ static MunitResult test_add(const MunitParameter params[], void* data) {
 
     int result = some_add(2, 3);
 
-    munit_assert_int(result, ==, 5);
+    munit_assert_int(result, ==, 6);
 
     return MUNIT_OK;
 }
