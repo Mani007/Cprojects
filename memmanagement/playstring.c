@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main() {
     printf("Charater and Strings\n");
-    char c = 'a';
+    char c = 'a'; // Single quotes if for charater
     printf(" the char is %c \n",c);
-    char *s = "abc";
+    char *s = "abc"; // double quote is char*
     //char *s = 'abc'; // This will make it a intiger not string pay attention to " " and ' '. 
     printf(" the string is %s \n",s);
     //printf(" the string is %c \n",*s);
