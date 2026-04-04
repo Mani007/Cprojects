@@ -1,3 +1,4 @@
+#pragma once
 #include <stdio.h>
 #include "base_lib.h"
 int sum(int a,int b){

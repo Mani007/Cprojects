@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main() {
     printf("Charater and Strings\n");
     char c = 'a'; // Single quotes if for charater
