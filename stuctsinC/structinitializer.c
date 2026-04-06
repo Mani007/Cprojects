@@ -12,5 +12,12 @@ int main() {
     City c2 = {1,"ABC"};
     printf("City id is %d\n",c2.id);
     printf("City id is %s\n",c2.name);
+    // Designated initializer - The best way to initialize the struct
+    City c3 = {
+        .id = 2,
+        .name = "xyz"
+    };
+    printf("City id is %d\n",c3.id);
+    printf("City id is %s\n",c3.name);
 return 0;
 }
