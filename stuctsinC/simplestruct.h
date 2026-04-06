@@ -6,6 +6,7 @@ typedef struct threeD {
     int y;
     int z;
 } ThreeD;
-void add3Dpoint(int x,int y, int z);
-void print3Dpoint();
+ThreeD* add3Dpoint(int x,int y, int z);
+ThreeD* create3Dpoint();
+void print3Dpoint(ThreeD* new3d);
 #endif 
