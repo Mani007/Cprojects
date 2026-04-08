@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Prefer making struct from ascending order of datatype sizes to avoid data padding
 typedef struct city{
     int id;
     char* name;  // strings in C
