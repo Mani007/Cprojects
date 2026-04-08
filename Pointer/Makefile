@@ -2,16 +2,16 @@ CC = gcc
 CFLAGS = -Wall -Wextra -g
 
 # Final executable
-output: pointerandfunc.o
-	$(CC) pointerandfunc.o -o output
+output: arrowoperator.o
+	$(CC) arrowoperator.o -o output
 
 # Compile main.c → main.o
 # main.o: main.c simplestruct.h
 # 	$(CC) $(CFLAGS) -c main.c
 
-# Compile affressof.c → pointerandfunc.o
-pointerandfunc.o: pointerandfunc.c 
-	$(CC) $(CFLAGS) -c pointerandfunc.c
+# Compile affressof.c → arrowoperator.o
+arrowoperator.o: arrowoperator.c 
+	$(CC) $(CFLAGS) -c arrowoperator.c
 
 # Clean build files
 clean:
