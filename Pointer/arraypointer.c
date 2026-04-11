@@ -5,7 +5,12 @@ int main() {
     int *ptr = &arr[0];
     //int (*ptr)[5];
     //ptr = &arr;
-    printf("Value at index 0 is %d \n", *ptr);
-    printf("Value at index 1 is %d \n", *(ptr+1));
+    //printf("Value at index 0 is %d \n", *ptr);
+    //printf("Value at index 1 is %d \n", *(ptr+1));
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Value at index %d is %d \n",i, *(ptr+i));
+    }
+    
 return 0;
 }
