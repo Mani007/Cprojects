@@ -11,16 +11,23 @@ int main() {
     char *s1 = "Hello, ";
     char *s2 = "world!";
 
-    char *s = malloc(strlen(s1) + strlen(s2) + 1); // +1 for '\0'
+    int len1 = strlen(s1);
+    int len2 = strlen(s2);
 
-    if (s == NULL) {
-        return 1; // allocation failed
+    char *s = malloc(len1 + len2 + 1);
+
+    for (int i = 0; i < len1; i++) {  // applying raw loops over the strings
+        s[i] = s1[i];
     }
 
-    sprintf(s, "%s%s", s1, s2);
+    for (int i = 0; i < len2; i++) {
+        s[len1 + i] = s2[i];
+    }
+
+    s[len1 + len2] = '\0';
 
     printf("%s\n", s);
 
-    free(s); // always free allocated memory
+    free(s);
 return 0;
 }
