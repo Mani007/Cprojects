@@ -1,11 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 int main() {
     printf("Strings and pointer\n");
-    char s1[] = "hi";
-    char s2[] = " hello";
+    // char s1[] = "hi";
+    // char s2[] = " hello";
     //char *s2 = " hello";
-    strcat(s1,s2);
-    printf(" New string: %s \n",s1);
+    // strcat(s1,s2);
+    // printf(" New string: %s \n",s1);
+    char *s1 = "Hello, ";
+    char *s2 = "world!";
+
+    char *s = malloc(strlen(s1) + strlen(s2) + 1); // +1 for '\0'
+
+    if (s == NULL) {
+        return 1; // allocation failed
+    }
+
+    strcpy(s, s1);   // copy s1 into s
+    strcat(s, s2);   // append s2 to s
+
+    printf("%s\n", s);
+
+    free(s); // always free allocated memory
 return 0;
 }
