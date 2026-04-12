@@ -7,5 +7,6 @@ int main() {
     // printf("Pointer next address %X \n",p+1);
     // in 32-bit computer size of pointer is always 4 byte irrespective of the data type
     printf("Pointer sizes %d", sizeof(p)); // in 64-bit computer size of pointer is always 8 byte 
+    printf("Pointer sizes %d", sizeof(p+1)); // in 64-bit computer size of pointer is always 8 byte 
 return 0;
 }
