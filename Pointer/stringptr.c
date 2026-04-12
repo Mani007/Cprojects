@@ -17,8 +17,7 @@ int main() {
         return 1; // allocation failed
     }
 
-    strcpy(s, s1);   // copy s1 into s
-    strcat(s, s2);   // append s2 to s
+    sprintf(s, "%s%s", s1, s2);
 
     printf("%s\n", s);
 
