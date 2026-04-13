@@ -5,6 +5,9 @@ typedef union uni  // Union always allocate memory of the largest size of dataty
     int id;
     char s;
 } Uni;  // This memory is allocated in continuous memory layout
+// We can also have a struct inside of union or vice versa 
+// Accessing members of union is often considered as bad practice as the union always allocate largest memory of its type
+// union is often helpful for memory optimization such as model quantization in ML
 
 int main() {
     printf("Unions in C\n");
