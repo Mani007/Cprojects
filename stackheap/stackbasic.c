@@ -30,12 +30,13 @@ void printOne(Coord *C){
 }
 void printTwo(Coord *C){
     // calling print 1 from here
-    printOne(C);
+    //printOne(C);
     printf("TWO :: The X is %d and the Y is %d\n",C->x,C->y);
 }
 void printThree(Coord *C){
     // callinf print 2 from here
     printTwo(C);
+    printOne(C);
     printf("THREE :: The X is %d and the Y is %d\n",C->x,C->y);
 }
 
