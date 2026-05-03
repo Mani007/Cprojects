@@ -29,14 +29,20 @@ void printOne(Coord *C){
     printf("The X is %d and the Y is %d\n",C->x,C->y);
 }
 void printTwo(Coord *C){
+    // calling print 1 from here
+    printOne(C);
     printf("TWO :: The X is %d and the Y is %d\n",C->x,C->y);
 }
 void printThree(Coord *C){
+    // callinf print 2 from here
+    printTwo(C);
     printf("THREE :: The X is %d and the Y is %d\n",C->x,C->y);
 }
+
+// Parent function for creating a stack frame
 int main() {
     printf("Stack basics in C\n");
     Coord *c1 = new_coord_alloc(2,3);
-    printOne(c1);
+    printThree(c1);
 return 0;
 }
